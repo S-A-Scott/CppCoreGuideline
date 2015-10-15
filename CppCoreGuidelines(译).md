@@ -86,25 +86,15 @@ language-technical, but refer to design and programming techniques
 
 # <a name="S-abstract"></a> 摘要
 
-This document is a set of guidelines for using C++ well.
-The aim of this document is to help people to use modern C++ effectively.
-By "modern C++" we mean C++11 and C++14 (and soon C++17).
-In other words, what would you like your code to look like in 5 year's time,
-give that you can start now? In 10 years' time?
 本文由一系列让人们更好使用C++ 的指南构成，这些指南旨在帮助人们更高效的
 使用现代C++技术。这里所说的现代C++是指C++11 和 C++ 14(以及不久之后的C++17). 
 换句话说，在接下来的5年内，你希望能写出怎样的代码？ 10年内呢？
 
-The guidelines are focused on relatively higher-level issues, such as
-interfaces, resource management, memory management, and concurrency.
-Such rules affect application architecture and library design.
-Following the rules will lead to code that is statically type safe, has no
-resource leaks, and catches many more programming logic errors that is common in
-code today.
-And it will run fast - you can afford to do things right.
 这篇指南着眼于相对高层的问题，例如接口，资源管理，内存管理，以及并发性。
-这些规则影响着应用的体系结构和库的设计。
+这些规则影响着应用的体系结构和库的设计。使用这些规则能够使代码静态类型安全
+(statically type safe)，避免资源泄漏(resource leaks)，捕获更多的编程逻辑错误
+(programming logic errors)。
 
-We are less concerned with low-level issues, such as naming conventions and
-indentation style.
-However, no topic that can help a programmer is out of bounds.
+
+我们更少的关心低层问题，例如命名习惯，缩写方式。
+但凡是帮助程序员的话题都不会遗漏。
