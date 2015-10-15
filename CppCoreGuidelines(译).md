@@ -2,10 +2,16 @@
 
 中英术语对照
 
-|   英文术语    |    译词   |
-|:-------------|:----------|
-|abstract      |抽象的      |
-|generic       |泛型       ｜
+|   英文术语    |    译词         |
+|:-------------|:----------------|
+|abstract      |抽象的            |
+|generic       |泛型              |
+|hierarchy     |继承体系(层次结构)  |
+|philosophy    |哲学              |
+
+
+1. 涉及C++ 语言关键字的相关术语保留。例如C++,class,public,private,namespace ......
+2. 用中文难以表达原意的词保留。
 
 2015年10月10日
 
@@ -82,10 +88,12 @@ language-technical, but refer to design and programming techniques
 
 This document is a set of guidelines for using C++ well.
 The aim of this document is to help people to use modern C++ effectively.
-By "modern C++" we mean C++ and C++14 (and soon C++17).
+By "modern C++" we mean C++11 and C++14 (and soon C++17).
 In other words, what would you like your code to look like in 5 year's time,
 give that you can start now? In 10 years' time?
-此文
+本文由一系列让人们更好使用C++ 的指南构成，这些指南旨在帮助人们更高效的
+使用现代C++技术。这里所说的现代C++是指C++11 和 C++ 14(以及不久之后的C++17). 
+换句话说，在接下来的5年内，你希望能写出怎样的代码？ 10年内呢？
 
 The guidelines are focused on relatively higher-level issues, such as
 interfaces, resource management, memory management, and concurrency.
@@ -94,6 +102,8 @@ Following the rules will lead to code that is statically type safe, has no
 resource leaks, and catches many more programming logic errors that is common in
 code today.
 And it will run fast - you can afford to do things right.
+这篇指南着眼于相对高层的问题，例如接口，资源管理，内存管理，以及并发性。
+这些规则影响着应用的体系结构和库的设计。
 
 We are less concerned with low-level issues, such as naming conventions and
 indentation style.
